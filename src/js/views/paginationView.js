@@ -17,7 +17,7 @@ class PaginationView extends View {
     const numberOfPages = Math.ceil(
       this._data.results.length / this._data.resultsPerPage
     );
-    console.log(numberOfPages);
+    //console.log(numberOfPages);
     //page 1 with other page
     if (curPage === 1 && numberOfPages > 1) {
       return ` <button data-goto="${
